@@ -1,0 +1,46 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Cars {
+  id        Int       @id @default(autoincrement())
+  brand     String
+  model     String
+  power     Int
+  speed     Int
+  year      Int
+  price     Int
+  image     String
+  available Boolean   @default(true)
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @default(now())
+  dropOff   DateTime? @db.Date
+}
+
+model Options {
+  id        Int      @id @default(autoincrement())
+  option    String
+  price     Int
+  createdAt DateTime @default(now())
+  updatedAt DateTime @default(now())
+}
+
+model Order {
+  id            String   @id @default(cuid())
+  sessionID     String   @unique
+  carId         Int
+  name          String
+  email         String
+  brand         String
+  price         Int
+  options       String[]
+  pickUp        DateTime
+  dropOff       DateTime
+  days          Int
+  deliveryPlace String
+}
