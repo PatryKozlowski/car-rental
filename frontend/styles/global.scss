@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap');
-@import '../styles/vars.scss';
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap");
+@import "../styles/vars.scss";
 
 * {
   margin: 0;
@@ -43,6 +43,14 @@ a {
   i {
     font-size: 3rem;
     color: $violet;
+  }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  select,
+  textarea,
+  input {
+    font-size: 16px;
   }
 }
 
