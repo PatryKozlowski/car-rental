@@ -1,0 +1,20 @@
+@import '../../styles/mixins.scss';
+@import '../../styles/vars.scss';
+
+.container_radio {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  @include desktop {
+    margin-left: 2rem;
+    width: 100%;
+  }
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 0.375rem;
+  padding: 1rem;
+}
+
+.error_order_radio {
+  border: 1px solid $error;
+}
