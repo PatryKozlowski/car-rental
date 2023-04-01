@@ -1,6 +1,5 @@
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
-import * as cookieParser from 'cookie-parser';
 
 async function bootstrap(): Promise<void> {
   const PORT = process.env.PORT || 3000;
@@ -12,7 +11,6 @@ async function bootstrap(): Promise<void> {
     credentials: true,
     origin: process.env.PUBLIC_URL,
   });
-  app.use(cookieParser());
   app.setGlobalPrefix('api/v1');
 
   try {
