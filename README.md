@@ -22,7 +22,16 @@ Car rental is a full-stack application that utilizes object-oriented programming
 ![Home](https://i.ibb.co/CvkQ3ZD/home.png)
 ![Available](https://i.ibb.co/BKk2k2M/aviable.png)
 ![Order](https://i.ibb.co/t8XSgbF/order.png)
+![Summary](https://i.ibb.co/tcyPP0C/summary.png)
 ![Unavailable](https://i.ibb.co/QDD5kVL/unavailable.png)
+
+# 💳 Stripe
+
+Test mode card
+Card information
+`4242 4242 4242 4242`
+CVC
+`222`
 
 ## 💾 Environment Variables
 
