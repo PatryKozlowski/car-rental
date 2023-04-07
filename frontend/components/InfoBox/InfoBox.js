@@ -12,6 +12,7 @@ class InfoBox {
   autoPlay(element) {
     if (window.innerWidth > 992) {
       element.setAttribute('autoplay', '')
+      element.setAttribute('playsinline', '')
     }
   }
 
@@ -33,7 +34,6 @@ class InfoBox {
     $video.src = this.video
     $video.preload = 'none'
     $video.loop = true
-    $video.playsInline = true
     $video.muted = true
     $video.setAttribute('type', 'video/mp4')
 
